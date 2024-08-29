@@ -1,0 +1,9 @@
+sources:
+  include:
+    - ./Sources
+  exclude:
+    - ./Tests
+templates:
+  - ./stencils/Other.swifttemplate
+output:
+  ${OUTPUT_DIR}/Mock.generated.swift
