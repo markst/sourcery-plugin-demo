@@ -3,6 +3,6 @@ import XCTest
 
 final class MyLibraryTests: XCTestCase {
   func testExample() throws {
-    
+    let mock = MyProtocolMock()
   }
 }

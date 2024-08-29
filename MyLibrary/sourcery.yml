@@ -4,6 +4,9 @@ sources:
   exclude:
     - ./Tests
 templates:
-  - ./stencils/Other.swifttemplate
+  - ./stencils/Other.stencil
 output:
   ${OUTPUT_DIR}/Mock.generated.swift
+args:
+  autoMockableImports:
+    - MyLibrary

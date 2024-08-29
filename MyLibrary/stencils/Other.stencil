@@ -1,0 +1,13 @@
+import Foundation
+#if os(iOS) || os(tvOS) || os(watchOS)
+import UIKit
+#endif
+
+{% for import in argument.autoMockableImports %}
+import {{ import }}
+{% endfor %}
+
+{% for type in types.protocols %}
+class {{ type.name }}Mock: {{ type.name }} {
+}
+{% endfor %}
