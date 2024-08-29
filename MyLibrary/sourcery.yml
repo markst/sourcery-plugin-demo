@@ -4,7 +4,7 @@ sources:
   exclude:
     - ./Tests
 templates:
-  - ./stencils/Other.stencil
+  - ./stencils/Other.swifttemplate
 output:
   ${OUTPUT_DIR}/Mock.generated.swift
 args:
